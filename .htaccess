@@ -1,0 +1,11 @@
+
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^/]+)/?$ url.php?customurl=$1 [L,QSA]
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^(\w+)$ ./customurl/url.php?customurl=$1
+
+#RewriteRule ^([^/]+)/?$ customurl/url.php?customurl=$1 [L,QSA]
+
