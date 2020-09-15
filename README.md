@@ -6,8 +6,7 @@ A basic url rewriter working w/ php 7.2 &amp; .htaccess
 3. Upload the « .htaccess » file and the « customurl » folder to the ROOT directory on your HTTP server.
 4. Connect the database with the tool. (open the « db_connect.php » file located in « customurl/webfiles/models/ » and fill in the user, pass, host and db_name variables).
 5. Reach the service by typing https://yourdomain.extension/curstomurl in the URL bar on your favorite browser.
-
-6. ENJOY !
+6. Manage and share your URLs !
 
 //
 
