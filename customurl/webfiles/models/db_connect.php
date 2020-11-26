@@ -1,12 +1,12 @@
 <?php
 
     function db_connect(){
-        $user = '';
-        $pass = '';
+        $user = 'username';
+        $pass = 'password';
         
         try {
             $dbh = 
-                new PDO('mysql:host=;dbname=;charset=UTF8',$user,$pass);
+            new PDO('mysql:host=dbhost;dbname=dbname;charset=UTF8',$user,$pass);
         } 
         
         catch (PDOException $e) {

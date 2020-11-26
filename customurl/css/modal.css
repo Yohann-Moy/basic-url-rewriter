@@ -1,0 +1,60 @@
+.ym-modal-shadow{
+    background-color: hsla(0, 0%, 0%, 0.404);
+    position: fixed;
+    left: 0px;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index:100;
+}
+
+.ym-modal-container{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 1.75rem auto;
+    min-height: calc(100% - (1.75rem * 2));
+    padding: 0 1.25rem;
+}
+
+.ym-modal-box{
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    color: #4c5e7d;
+}
+
+.ym-modal-header{
+    padding: 1rem 1.25rem;
+    font-size : 1.25rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.ym-modal-body{
+    text-align: left;
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.ym-modal-footer{
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+}
+
+.ym-modal-box button{
+    width: 45%;
+    margin: 0 2%;
+}
+
+.accept{color:rgb(73, 160, 120); border:2px solid rgb(73, 160, 120); border-radius: 5px; background-color: white;}
+.accept:hover{background-color:rgb(73, 160, 120); color: white;}
+
+.refuse{color:#ff6663;border:2px solid #ff6663; border-radius: 5px; background-color: white;}
+.refuse:hover{background-color:#ff6663; color: white;}

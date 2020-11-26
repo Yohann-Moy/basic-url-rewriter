@@ -6,12 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="icon" href="ressources/images/favicon.ico" />
 
-        <title>Basic URL Rewriter</title>
+        <title>URL Rewriter</title>
         
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
 
         <script src="./jquery/jquery-3.4.1.min.js"></script>
         <script src="./jquery/ajax.min.js"></script>
         <script src="./jquery/script.js"></script>
+        <script src="./jquery/modal.js"></script>
+
     </head>
     <body>

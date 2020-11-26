@@ -24,8 +24,19 @@ CREATE TABLE IF NOT EXISTS `urlrewriter` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
+
+-- Listage de la structure de la table url-rewriter-plugin. urlrewaccounts
+CREATE TABLE IF NOT EXISTS `urlrewaccounts` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `login` text,
+  `password` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
 -- Listage des données de la table url-rewriter-plugin.urlrewriter : ~4 rows (environ)
 DELETE FROM `urlrewriter`;
+DELETE FROM `urlrewaccounts`;
+
 /*!40000 ALTER TABLE `urlrewriter` DISABLE KEYS */;
 INSERT INTO `urlrewriter` (`id`, `original`, `custom`) VALUES
 	(1, 'https://www.youtube.com/watch?v=FgApngD5faY&ab_channel=Monstercat%3AUncaged', 'http://yohannmoy.fr/badcomputer'),

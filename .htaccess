@@ -1,11 +1,10 @@
-
-#RewriteEngine On
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteRule ^([^/]+)/?$ url.php?customurl=$1 [L,QSA]
-
 Options +FollowSymLinks
 RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteRule signup customurl/webfiles/views/auth/signup.php
+RewriteRule login customurl/webfiles/views/auth/login.php
+
 RewriteRule ^(\w+)$ ./customurl/url.php?customurl=$1
-
-#RewriteRule ^([^/]+)/?$ customurl/url.php?customurl=$1 [L,QSA]
-
